@@ -393,3 +393,14 @@ body {
     }
   }
 }
+
+.is-mobile {
+  & .cm-sizer .cm-contentContainer {
+    padding: 0 var(--font-text-size);
+  }
+
+  & .metadata-content {
+    width: calc(90% - var(--size-4-6));
+    transform: none;
+  }
+}

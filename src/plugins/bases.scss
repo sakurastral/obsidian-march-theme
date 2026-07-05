@@ -1,5 +1,13 @@
+/* https://docs.obsidian.md/Reference/CSS+variables/Editor/Bases */
+/* https://docs.obsidian.md/Reference/CSS+variables/Editor/Table */
+
 body {
-  --bases-embed-radius: 8px;
+  --bases-table-column-border-width: 0px;
+  --bases-table-row-border-width: 0px;
+  --bases-table-header-background: var(--background-secondary);
+
+  --bases-table-row-background-hover: var(--background-secondary);
+  --bases-embed-radius: var(--radius-l);
 }
 
 :is(.bases-no-toolbar, .bases-embed[alt~='no-toolbar']) .bases-toolbar-item {
@@ -30,4 +38,14 @@ body {
 
 .bases-view {
   scrollbar-gutter: auto;
+}
+
+/* https://forum.obsidian.md/t/enable-styling-row-in-base-based-on-its-row-number/108651 */
+
+.bases-tr:nth-of-type(even) {
+  background: var(--background-primary-alt);
+}
+
+.bases-table .bases-group-heading {
+  background: var(--background-secondary-alt);
 }

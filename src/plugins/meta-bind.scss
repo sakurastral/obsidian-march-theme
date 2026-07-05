@@ -26,3 +26,27 @@ Helper Class
     display: none;
   }
 }
+
+.march-metabind-aliases {
+  display: flex;
+  justify-content: center;
+  background: var(--background-secondary);
+  border-radius: var(--radius-l);
+  padding: 10px 5px;
+  --mb-border-width: 0;
+
+  & .mb-inline-list-item {
+    background: var(--background-secondary-alt);
+    border-radius: 50px;
+  }
+}
+
+.march-metabind-description {
+  & textArea {
+    height: calc(1.3rem + 1rem);
+    padding: 0.6rem;
+    border-radius: var(--radius-l);
+    margin-top: calc(var(--font-text-size) / 2);
+    text-align: center;
+  }
+}
