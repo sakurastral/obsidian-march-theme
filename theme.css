@@ -1216,8 +1216,10 @@ body code, body .cm-inline-code, body .HyperMD-codeblock {
   --background-secondary-alt: hsl(var(--background-secondary-alt-h), var(--background-secondary-alt-s), var(--background-secondary-alt-l));
   --background-modifier-border-h: var(--accent-h);
   --background-modifier-border-s: 35%;
-  --background-modifier-border-l: 40%;
+  --background-modifier-border-l: 20%;
   --background-modifier-border: hsl(var(--background-modifier-border-h), var(--background-modifier-border-s), var(--background-modifier-border-l));
+  --background-modifier-form-field: var(--background-secondary);
+  --input-border-width: 0;
   --text-normal: hsl(var(--accent-h), 20%, 100%);
   --text-muted: hsl(var(--accent-h), 20%, 50%);
   --text-faint: hsl(var(--accent-h), 20%, 30%);
