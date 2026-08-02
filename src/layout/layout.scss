@@ -17,6 +17,8 @@ body {
 
   --march-status-bar-height: calc(var(--status-bar-font-size) + var(--size-4-1) + var(--size-4-1) + 0.5rem);
 
+  --button-radius: 50px;
+
   .mod-root {
     --metadata-background: var(--background-primary-alt);
     --metadata-border-width: 0px;

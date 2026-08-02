@@ -28,3 +28,15 @@
     }
   }
 }
+
+body.is-popout-modal.is-frameless .titlebar {
+  border-bottom: none;
+}
+
+.modal.mod-settings .vertical-tab-header {
+  border-inline-end: none;
+}
+
+.setting-group .setting-item:not(.setting-item-heading) {
+  --setting-items-padding-y: 16px;
+}

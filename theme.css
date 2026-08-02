@@ -1607,6 +1607,7 @@ body {
   --tab-text-color-focused-highlighted: var(--text-accent);
   --tab-text-color-focused-active-current: var(--tab-text-color-active);
   --march-status-bar-height: calc(var(--status-bar-font-size) + var(--size-4-1) + var(--size-4-1) + 0.5rem);
+  --button-radius: 50px;
 }
 body .mod-root {
   --metadata-background: var(--background-primary-alt);
@@ -1997,6 +1998,18 @@ body .cm-gutterElement.cm-active {
 .modal.mod-settings .vertical-tab-content .setting-item-heading .setting-item-info .setting-item-name {
   color: var(--march-accent);
   font-size: var(--font-ui-larger);
+}
+
+body.is-popout-modal.is-frameless .titlebar {
+  border-bottom: none;
+}
+
+.modal.mod-settings .vertical-tab-header {
+  border-inline-end: none;
+}
+
+.setting-group .setting-item:not(.setting-item-heading) {
+  --setting-items-padding-y: 16px;
 }
 
 /* ========================================================================== */
