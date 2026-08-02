@@ -11,6 +11,10 @@
 .style-settings-container {
   border-left: 1px solid var(--background-modifier-border);
   margin-left: 1rem;
+
+  & .setting-item:not(.setting-item-heading) {
+    background-color: var(--background-secondary);
+  }
 }
 
 .style-settings-heading[data-level='0'] + .style-settings-container {

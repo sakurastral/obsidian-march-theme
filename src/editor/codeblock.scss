@@ -61,8 +61,8 @@ body {
     --code-background: var(--march-code-background);
     --code-normal: var(--text-muted);
     border: var(--code-border-width) solid var(--code-border-color);
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .HyperMD-codeblock.cm-line {
     --code-background: var(--march-code-background);

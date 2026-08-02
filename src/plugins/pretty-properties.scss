@@ -6,28 +6,3 @@
   border-radius: var(--march-pretty-properties-initial-cover-border-radius);
   aspect-ratio: var(--march-pretty-properties-initial-cover-aspect-ratio);
 }
-
-/*
-=== === === === === === === === === === === === === 
-
-Fix Conflict with Better Properties Plugin
-
-=== === === === === === === === === === === === === 
-*/
-
-.autohide-props-with-banner .cm-scroller:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container,
-.autohide-props-with-banner .markdown-preview-view:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container {
-  position: relative;
-}
-
-.autohide-props-with-banner .cm-scroller:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container:not(:hover, :focus, :focus-within),
-.autohide-props-with-banner .markdown-preview-view:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container:not(:hover, :focus, :focus-within) {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.autohide-props-with-banner .cm-scroller:has(.banner-image:not(:empty)) .metadata-container .metadata-content,
-.autohide-props-with-banner .markdown-preview-view:has(.banner-image:not(:empty)) .metadata-container .metadata-content {
-  overflow: scroll;
-  max-height: 500px;
-}

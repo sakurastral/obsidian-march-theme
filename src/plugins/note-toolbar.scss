@@ -4,7 +4,7 @@ body .workspace .callout[data-callout='note-toolbar'] {
     & .callout-content {
       & ul {
         display: flex;
-        flex-wrap: nowrap !important;
+        flex-wrap: nowrap;
       }
       &::-webkit-scrollbar {
         width: 0;

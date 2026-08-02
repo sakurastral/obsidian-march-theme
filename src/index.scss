@@ -28,17 +28,10 @@
 @use 'editor/cssclasses.scss';
 
 @use 'plugins/file-explorer.scss';
-@use 'plugins/calendar-bases.scss';
-@use 'plugins/calendar.scss';
 @use 'plugins/style-settings.scss';
-@use 'plugins/kanban.scss';
-@use 'plugins/dataview.scss';
 @use 'plugins/bases.scss';
-@use 'plugins/better-properties.scss';
 @use 'plugins/pretty-properties.scss';
 @use 'plugins/note-toolbar.scss';
-@use 'plugins/meta-bind.scss';
-@use 'plugins/virtual-content.scss';
 
 // Temp Fix
 .cmdr-name-input-wrapper {

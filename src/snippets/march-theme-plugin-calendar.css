@@ -1,8 +1,0 @@
-#calendar-container {
-  .day[data-tags~='特殊日子/要上班'] {
-    color: var(--march-calendar-color-workday-text) !important;
-  }
-  .day[data-tags~='特殊日子/放假啦'] {
-    color: var(--march-calendar-color-holiday-text) !important;
-  }
-}

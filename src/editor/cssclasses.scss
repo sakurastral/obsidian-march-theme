@@ -2,14 +2,14 @@ img[src*='#circle'],
 .image-embed[src*='#circle'] img {
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 
 img[src*='#center'],
 .markdown-rendered img[src*='#center'],
 .cm-content .image-embed[src*='#center'] {
-  display: block !important;
-  margin-inline: auto !important;
+  display: block;
+  margin-inline: auto;
 }
 
 div[src*='#center'],

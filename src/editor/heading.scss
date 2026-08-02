@@ -54,12 +54,12 @@ body {
 
 body {
   .cm-s-obsidian .cm-gutters .cm-gutterElement {
-    padding-top: 0 !important;
+    padding-top: 0;
     display: flex;
     align-items: start;
   }
   .cm-s-obsidian .cm-line.HyperMD-header {
-    padding-top: 0 !important;
+    padding-top: 0;
   }
 
   $list: (1, 2, 3, 4, 5, 6);
@@ -76,7 +76,7 @@ body {
     .HyperMD-header-#{$item}:hover,
     h-#{$item}:hover {
       & .collapse-indicator {
-        opacity: 1 !important;
+        opacity: 1;
       }
     }
   }
@@ -85,7 +85,7 @@ body {
     .HyperMD-header-#{$item},
     h-#{$item} {
       .collapse-indicator {
-        opacity: var(--march-h#{$item}-indicator-opacity) !important;
+        opacity: var(--march-h#{$item}-indicator-opacity);
       }
       & .collapse-indicator.collapse-icon svg {
         -webkit-mask-image: var(--march-h#{$item}-indicator-icon);

@@ -1,9 +1,0 @@
-.virtual-footer-dynamic-content-element {
-  margin-top: 16px;
-  margin-bottom: 16px;
-
-  &.virtual-footer-footer-group {
-    padding: var(--font-text-size) calc(var(--font-text-size) / 2) calc(var(--font-text-size) / 2 / 2);
-    border-top: 1px solid var(--background-modifier-border);
-  }
-}

@@ -63,7 +63,7 @@ body {
 
 .markdown-rendered blockquote blockquote {
   padding-inline-start: calc(16px + var(--blockquote-border-thickness));
-  padding-block: 0 !important;
+  padding-block: 0;
   background-color: transparent;
 }
 

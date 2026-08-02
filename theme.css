@@ -1578,8 +1578,8 @@ body code, body .cm-inline-code, body .HyperMD-codeblock {
 
 @media print {
   body {
-    --accent-s: 80% !important;
-    --accent-l: 20% !important;
+    --accent-s: 80%;
+    --accent-l: 20%;
   }
 }
 :is(body) {
@@ -1941,7 +1941,7 @@ body ::-webkit-scrollbar-thumb {
   min-height: 45px;
 }
 body :hover::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb-bg) !important;
+  background-color: var(--scrollbar-thumb-bg);
 }
 
 /** shrink-pinned-tab: from https://forum.obsidian.md/t/shrink-the-size-of-pinned-tabs/71914 */
@@ -1950,9 +1950,9 @@ body :hover::-webkit-scrollbar-thumb {
 }
 
 .enable-shrink-pinned-tabs .workspace-tab-header:has(.mod-pinned) {
-  max-width: calc(var(--march-pinned-tab-width) + 0.125rem) !important;
-  container-type: normal !important;
-  min-width: max-content !important;
+  max-width: calc(var(--march-pinned-tab-width) + 0.125rem);
+  container-type: normal;
+  min-width: max-content;
 }
 .enable-shrink-pinned-tabs .workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-title {
   max-width: var(--march-pinned-tab-width);
@@ -1962,7 +1962,7 @@ body :hover::-webkit-scrollbar-thumb {
 /*                            Layout - Active Line                            */
 /* ========================================================================== */
 body .cm-gutterElement.cm-active {
-  color: var(--march-accent) !important;
+  color: var(--march-accent);
 }
 
 .inline-title {
@@ -2142,7 +2142,7 @@ body {
 
 .markdown-rendered blockquote blockquote {
   padding-inline-start: calc(16px + var(--blockquote-border-thickness));
-  padding-block: 0 !important;
+  padding-block: 0;
   background-color: transparent;
 }
 
@@ -2221,8 +2221,8 @@ body code {
   --code-background: var(--march-code-background);
   --code-normal: var(--text-muted);
   border: var(--code-border-width) solid var(--code-border-color);
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 body .HyperMD-codeblock.cm-line {
   --code-background: var(--march-code-background);
@@ -2844,12 +2844,12 @@ body {
 }
 
 body .cm-s-obsidian .cm-gutters .cm-gutterElement {
-  padding-top: 0 !important;
+  padding-top: 0;
   display: flex;
   align-items: start;
 }
 body .cm-s-obsidian .cm-line.HyperMD-header {
-  padding-top: 0 !important;
+  padding-top: 0;
 }
 body .HyperMD-header-1,
 body h-1 {
@@ -2878,36 +2878,36 @@ body h-6 {
 body .cm-line:hover .collapse-indicator,
 body .HyperMD-header-1:hover .collapse-indicator,
 body h-1:hover .collapse-indicator {
-  opacity: 1 !important;
+  opacity: 1;
 }
 body .cm-line:hover .collapse-indicator,
 body .HyperMD-header-2:hover .collapse-indicator,
 body h-2:hover .collapse-indicator {
-  opacity: 1 !important;
+  opacity: 1;
 }
 body .cm-line:hover .collapse-indicator,
 body .HyperMD-header-3:hover .collapse-indicator,
 body h-3:hover .collapse-indicator {
-  opacity: 1 !important;
+  opacity: 1;
 }
 body .cm-line:hover .collapse-indicator,
 body .HyperMD-header-4:hover .collapse-indicator,
 body h-4:hover .collapse-indicator {
-  opacity: 1 !important;
+  opacity: 1;
 }
 body .cm-line:hover .collapse-indicator,
 body .HyperMD-header-5:hover .collapse-indicator,
 body h-5:hover .collapse-indicator {
-  opacity: 1 !important;
+  opacity: 1;
 }
 body .cm-line:hover .collapse-indicator,
 body .HyperMD-header-6:hover .collapse-indicator,
 body h-6:hover .collapse-indicator {
-  opacity: 1 !important;
+  opacity: 1;
 }
 body .HyperMD-header-1 .collapse-indicator,
 body h-1 .collapse-indicator {
-  opacity: var(--march-h1-indicator-opacity) !important;
+  opacity: var(--march-h1-indicator-opacity);
 }
 body .HyperMD-header-1 .collapse-indicator.collapse-icon svg,
 body h-1 .collapse-indicator.collapse-icon svg {
@@ -2931,7 +2931,7 @@ body h-1 .collapse-indicator.collapse-icon svg:hover {
 }
 body .HyperMD-header-2 .collapse-indicator,
 body h-2 .collapse-indicator {
-  opacity: var(--march-h2-indicator-opacity) !important;
+  opacity: var(--march-h2-indicator-opacity);
 }
 body .HyperMD-header-2 .collapse-indicator.collapse-icon svg,
 body h-2 .collapse-indicator.collapse-icon svg {
@@ -2955,7 +2955,7 @@ body h-2 .collapse-indicator.collapse-icon svg:hover {
 }
 body .HyperMD-header-3 .collapse-indicator,
 body h-3 .collapse-indicator {
-  opacity: var(--march-h3-indicator-opacity) !important;
+  opacity: var(--march-h3-indicator-opacity);
 }
 body .HyperMD-header-3 .collapse-indicator.collapse-icon svg,
 body h-3 .collapse-indicator.collapse-icon svg {
@@ -2979,7 +2979,7 @@ body h-3 .collapse-indicator.collapse-icon svg:hover {
 }
 body .HyperMD-header-4 .collapse-indicator,
 body h-4 .collapse-indicator {
-  opacity: var(--march-h4-indicator-opacity) !important;
+  opacity: var(--march-h4-indicator-opacity);
 }
 body .HyperMD-header-4 .collapse-indicator.collapse-icon svg,
 body h-4 .collapse-indicator.collapse-icon svg {
@@ -3003,7 +3003,7 @@ body h-4 .collapse-indicator.collapse-icon svg:hover {
 }
 body .HyperMD-header-5 .collapse-indicator,
 body h-5 .collapse-indicator {
-  opacity: var(--march-h5-indicator-opacity) !important;
+  opacity: var(--march-h5-indicator-opacity);
 }
 body .HyperMD-header-5 .collapse-indicator.collapse-icon svg,
 body h-5 .collapse-indicator.collapse-icon svg {
@@ -3027,7 +3027,7 @@ body h-5 .collapse-indicator.collapse-icon svg:hover {
 }
 body .HyperMD-header-6 .collapse-indicator,
 body h-6 .collapse-indicator {
-  opacity: var(--march-h6-indicator-opacity) !important;
+  opacity: var(--march-h6-indicator-opacity);
 }
 body .HyperMD-header-6 .collapse-indicator.collapse-icon svg,
 body h-6 .collapse-indicator.collapse-icon svg {
@@ -3086,12 +3086,12 @@ body {
 /* ========================================================================== */
 .cm-highlight,
 mark {
-  background-color: var(--march-formatted-text-highlight-bg) !important;
-  color: var(--march-formatted-text-highlight-fg) !important;
+  background-color: var(--march-formatted-text-highlight-bg);
+  color: var(--march-formatted-text-highlight-fg);
 }
 .cm-highlight :not(:hover),
 mark :not(:hover) {
-  color: var(--march-formatted-text-highlight-fg) !important;
+  color: var(--march-formatted-text-highlight-fg);
 }
 
 .cm-line .cm-highlight:nth-child(1 of .cm-highlight) {
@@ -3113,15 +3113,15 @@ mark {
 .theme-dark .suggestion-highlight,
 .theme-dark .search-result-file-matched-text {
   --text-highlight-bg: transparent;
-  color: var(--march-formatted-text-highlight-bg) !important;
+  color: var(--march-formatted-text-highlight-bg);
   border-bottom: 2px solid var(--march-formatted-text-highlight-bg);
 }
 
 .theme-light .suggestion-highlight,
 .theme-light .search-result-file-matched-text {
   --text-highlight-bg: transparent;
-  color: var(--march-formatted-text-highlight-fg) !important;
-  background-color: var(--march-formatted-text-highlight-bg) !important;
+  color: var(--march-formatted-text-highlight-fg);
+  background-color: var(--march-formatted-text-highlight-bg);
   border-bottom: 2px solid var(--march-formatted-text-highlight-bg);
 }
 
@@ -3133,8 +3133,8 @@ strong,
 .cm-strong {
   color: var(--bold-color);
   box-shadow: inset 0 calc(var(--march-formatted-text-bg-height) * -1) 0 0 var(--march-formatted-text-bold-bg);
-  --link-color: var(--bold-color) !important;
-  --link-external-color: var(--bold-color) !important;
+  --link-color: var(--bold-color);
+  --link-external-color: var(--bold-color);
 }
 b i, b em, b.cm-em,
 strong i,
@@ -3148,7 +3148,7 @@ strong.cm-em,
 b.cm-inline-code,
 strong.cm-inline-code,
 .cm-strong.cm-inline-code {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 /* ========================================================================== */
@@ -3175,7 +3175,7 @@ em.cm-strong,
 i.cm-inline-code,
 em.cm-inline-code,
 .cm-em.cm-inline-code {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 /* ========================================================================== */
@@ -3194,14 +3194,14 @@ img[src*="#circle"],
 .image-embed[src*="#circle"] img {
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 
 img[src*="#center"],
 .markdown-rendered img[src*="#center"],
 .cm-content .image-embed[src*="#center"] {
-  display: block !important;
-  margin-inline: auto !important;
+  display: block;
+  margin-inline: auto;
 }
 
 div[src*="#center"],
@@ -3361,156 +3361,6 @@ span[src*="#center"] {
   height: 1rem;
 }
 
-.bases-calendar-container .fc-daygrid-day.fc-day-sat {
-  background-color: rgba(var(--color-blue-rgb), 0.1) !important;
-  border-color: rgba(var(--color-blue-rgb), 0.5) !important;
-}
-.bases-calendar-container .fc-daygrid-day.fc-day-sat:not(.fc-day-today) .fc-daygrid-day-number {
-  color: rgba(var(--color-blue-rgb), 0.8) !important;
-}
-.bases-calendar-container .fc-daygrid-day.fc-day-sun {
-  background-color: rgba(var(--color-red-rgb), 0.1) !important;
-  border-color: rgba(var(--color-red-rgb), 0.5) !important;
-}
-.bases-calendar-container .fc-daygrid-day.fc-day-sun:not(.fc-day-today) .fc-daygrid-day-number {
-  color: rgba(var(--color-red-rgb), 0.8) !important;
-}
-.bases-calendar-container .fc-col-header-cell.fc-day-mon,
-.bases-calendar-container .fc-col-header-cell.fc-day-tue,
-.bases-calendar-container .fc-col-header-cell.fc-day-wed,
-.bases-calendar-container .fc-col-header-cell.fc-day-thu,
-.bases-calendar-container .fc-col-header-cell.fc-day-fri {
-  background-color: var(--background-primary) !important;
-}
-.bases-calendar-container .fc-col-header-cell.fc-day-sat {
-  background-color: var(--background-primary) !important;
-  background-image: linear-gradient(rgba(var(--color-blue-rgb), 0.1), rgba(var(--color-blue-rgb), 0.1)) !important;
-  background-blend-mode: normal;
-  border-color: rgba(var(--color-blue-rgb), 0.5) !important;
-}
-.bases-calendar-container .fc-col-header-cell.fc-day-sat .fc-col-header-cell-cushion {
-  color: rgba(var(--color-blue-rgb), 0.8) !important;
-}
-.bases-calendar-container .fc-col-header-cell.fc-day-sun {
-  background-color: var(--background-primary) !important;
-  background-image: linear-gradient(rgba(var(--color-red-rgb), 0.1), rgba(var(--color-red-rgb), 0.1)) !important;
-  background-blend-mode: normal;
-  border-color: rgba(var(--color-red-rgb), 0.5) !important;
-}
-.bases-calendar-container .fc-col-header-cell.fc-day-sun .fc-col-header-cell-cushion {
-  color: rgba(var(--color-red-rgb), 0.8) !important;
-}
-.bases-calendar-container .fc-day-mon .fc-event,
-.bases-calendar-container .fc-day-tue .fc-event,
-.bases-calendar-container .fc-day-wed .fc-event,
-.bases-calendar-container .fc-day-thu .fc-event,
-.bases-calendar-container .fc-day-fri .fc-event,
-.bases-calendar-container .fc-day-sat .fc-event,
-.bases-calendar-container .fc-day-sun .fc-event {
-  background-color: var(--text-accent) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  border-radius: 10px !important;
-  font-weight: 100 !important;
-  cursor: pointer !important;
-  white-space: wrap;
-  margin: 3px 8px !important;
-  padding: 0 !important;
-  max-height: auto !important;
-  font-size: var(--font-smallest) !important;
-  overflow: auto;
-  --link-color: var(--text-on-accent);
-  --link-external-color: var(--text-on-accent);
-}
-.bases-calendar-container .fc-day-mon .fc-event .bases-calendar-event-title,
-.bases-calendar-container .fc-day-mon .fc-event .bases-calendar-event-content,
-.bases-calendar-container .fc-day-tue .fc-event .bases-calendar-event-title,
-.bases-calendar-container .fc-day-tue .fc-event .bases-calendar-event-content,
-.bases-calendar-container .fc-day-wed .fc-event .bases-calendar-event-title,
-.bases-calendar-container .fc-day-wed .fc-event .bases-calendar-event-content,
-.bases-calendar-container .fc-day-thu .fc-event .bases-calendar-event-title,
-.bases-calendar-container .fc-day-thu .fc-event .bases-calendar-event-content,
-.bases-calendar-container .fc-day-fri .fc-event .bases-calendar-event-title,
-.bases-calendar-container .fc-day-fri .fc-event .bases-calendar-event-content,
-.bases-calendar-container .fc-day-sat .fc-event .bases-calendar-event-title,
-.bases-calendar-container .fc-day-sat .fc-event .bases-calendar-event-content,
-.bases-calendar-container .fc-day-sun .fc-event .bases-calendar-event-title,
-.bases-calendar-container .fc-day-sun .fc-event .bases-calendar-event-content {
-  color: var(--text-on-accent) !important;
-  word-break: break-all;
-}
-.bases-calendar-container .fc-day-mon .fc-event:hover,
-.bases-calendar-container .fc-day-tue .fc-event:hover,
-.bases-calendar-container .fc-day-wed .fc-event:hover,
-.bases-calendar-container .fc-day-thu .fc-event:hover,
-.bases-calendar-container .fc-day-fri .fc-event:hover,
-.bases-calendar-container .fc-day-sat .fc-event:hover,
-.bases-calendar-container .fc-day-sun .fc-event:hover {
-  z-index: 100 !important;
-  /* Float above other events */
-  position: relative;
-}
-.bases-calendar-container .fc .fc-daygrid-day-top {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-}
-.bases-calendar-container .fc-daygrid-day-number {
-  font-size: var(--text-normal) !important;
-}
-.bases-calendar-container .bases-calendar-event-title {
-  font-weight: none !important;
-  margin-bottom: 0px !important;
-}
-.bases-calendar-container .bases-calendar-event-content {
-  font-size: var(--text-normal) !important;
-}
-
-/* obsidian-calendar-plugin */
-/* https://github.com/liamcain/obsidian-calendar-plugin */
-:is(body) {
-  --color-text-heading: var(--text-normal);
-  --march-calendar-color-workday-text: var(--text-normal);
-  --march-calendar-color-holiday-text: var(--color-red);
-  --march-calendar-color-today-bg: var(--march-bg-accent);
-  --march-calendar-color-hover-bg: var(--background-primary);
-  --march-calendar-color-active-border: var(--march-accent);
-  --march-calendar-dots-display: none;
-  --march-calendar-weeknum-border-display: none;
-}
-
-#calendar-container table th:nth-last-child(2),
-#calendar-container table th:nth-last-child(1),
-#calendar-container table td:nth-last-child(2) .day,
-#calendar-container table td:nth-last-child(1) .day {
-  color: var(--march-calendar-color-holiday-text);
-}
-#calendar-container .dot-container {
-  display: var(--march-calendar-dots-display);
-}
-#calendar-container table th {
-  border-bottom: 1px solid var(--color-text-heading);
-}
-#calendar-container table th:nth-last-child(2),
-#calendar-container table th:nth-last-child(1) {
-  border-bottom: 1px solid var(--march-calendar-color-holiday-text);
-}
-#calendar-container table td:has(.week-num) {
-  border-right: var(--march-calendar-weeknum-border-display);
-}
-#calendar-container .active {
-  background-color: transparent;
-  color: inherit;
-  border-radius: 0;
-  border: 1px solid var(--march-calendar-color-active-border);
-}
-#calendar-container .day:hover {
-  background-color: var(--march-calendar-color-hover-bg);
-  border-radius: 0;
-}
-#calendar-container .today {
-  background-color: var(--march-calendar-color-today-bg);
-}
-
 .style-settings-heading {
   margin-bottom: 0px;
 }
@@ -3528,6 +3378,9 @@ span[src*="#center"] {
   border-left: 1px solid var(--background-modifier-border);
   margin-left: 1rem;
 }
+.style-settings-container .setting-item:not(.setting-item-heading) {
+  background-color: var(--background-secondary);
+}
 
 .style-settings-heading[data-level="0"] + .style-settings-container {
   padding-left: 1rem;
@@ -3540,133 +3393,6 @@ span[src*="#center"] {
 
 .style-settings-collapse-indicator {
   color: var(--text-normal);
-}
-
-:is(body) {
-  --march-kanban-border-color: rgb(0, 0, 0, 0);
-}
-
-.kanban-plugin {
-  --background-modifier-border: var(--march-kanban-border-color);
-}
-
-.kanban-plugin__lane-items > div {
-  margin-block-start: 10px;
-}
-
-.kanban-plugin__lane,
-.kanban-plugin__lane-items.kanban-plugin__scroll-container,
-.kanban-plugin__item-button-wrapper,
-.kanban-plugin__item-metadata-wrapper {
-  background-color: var(--background-secondary) !important;
-  color: var(--text-normal);
-}
-
-button.kanban-plugin__new-item-button {
-  background-color: var(--march-accent);
-  color: var(--background-primary);
-  box-shadow: none;
-}
-
-.kanban-plugin__table-cell-wrapper .kanban-plugin__lane-menu,
-.kanban-plugin__table-cell-wrapper .kanban-plugin__item-prefix-button,
-.kanban-plugin__item .kanban-plugin__item-prefix-button,
-.kanban-plugin__item .kanban-plugin__item-postfix-button,
-.kanban-plugin__lane .kanban-plugin__lane-settings-button,
-.kanban-plugin__table-cell-wrapper .kanban-plugin__lane-menu.is-enabled,
-.kanban-plugin__table-cell-wrapper .kanban-plugin__item-prefix-button.is-enabled,
-.kanban-plugin__item .kanban-plugin__item-prefix-button.is-enabled,
-.kanban-plugin__item .kanban-plugin__item-postfix-button.is-enabled,
-.kanban-plugin__lane .kanban-plugin__lane-settings-button.is-enabled {
-  background-color: var(--march-accent);
-  color: var(--background-primary);
-  border: 1px solid var(--background-primary);
-}
-.kanban-plugin__table-cell-wrapper .kanban-plugin__lane-menu:hover,
-.kanban-plugin__table-cell-wrapper .kanban-plugin__item-prefix-button:hover,
-.kanban-plugin__item .kanban-plugin__item-prefix-button:hover,
-.kanban-plugin__item .kanban-plugin__item-postfix-button:hover,
-.kanban-plugin__lane .kanban-plugin__lane-settings-button:hover,
-.kanban-plugin__table-cell-wrapper .kanban-plugin__lane-menu.is-enabled:hover,
-.kanban-plugin__table-cell-wrapper .kanban-plugin__item-prefix-button.is-enabled:hover,
-.kanban-plugin__item .kanban-plugin__item-prefix-button.is-enabled:hover,
-.kanban-plugin__item .kanban-plugin__item-postfix-button.is-enabled:hover,
-.kanban-plugin__lane .kanban-plugin__lane-settings-button.is-enabled:hover {
-  background-color: var(--background-primary);
-  color: var(--march-accent);
-  border: 1px solid var(--march-accent);
-}
-
-div.kanban-plugin__lane-title-count {
-  color: var(--march-accent);
-  background-color: var(--march-bg-accent);
-}
-
-.kanban-plugin__item-title-wrapper,
-p.kanban-plugin__markdown-preview-view * {
-  background-color: var(--background-primary) !important;
-  border-radius: 5px;
-}
-
-.kanban-plugin__item-input-wrapper {
-  background-color: var(--background-primary) !important;
-  color: var(--color-yellow);
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 3px;
-}
-
-.kanban-plugin__item-input {
-  background-color: var(--background-primary) !important;
-}
-.kanban-plugin__item-input .cm-line.cm-active {
-  background-color: var(--background-primary) !important;
-}
-
-/* from: https://forum.obsidian.md/t/inline-property-style/46902/2 */
-span.dataview.inline-field {
-  white-space: nowrap;
-  font-size: var(--font-smallest);
-}
-
-span.dataview.inline-field-key {
-  border: 1px solid transparent;
-  border-right: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  color: var(--text-on-accent);
-}
-
-span.dataview.inline-field-value {
-  border: 1px solid transparent;
-  border-left: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: var(--background-secondary);
-  color: var(--text-normal);
-}
-
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=x]) span.dataview.inline-field-key,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=x]) span.dataview.inline-field-value,
-.markdown-preview-view ul li[data-task=x].task-list-item.is-checked span.dataview.inline-field-key,
-.markdown-preview-view ul li[data-task=x].task-list-item.is-checked span.dataview.inline-field-value,
-li[data-task=x].task-list-item.is-checked span.dataview.inline-field-key,
-li[data-task=x].task-list-item.is-checked span.dataview.inline-field-value,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X]) span.dataview.inline-field-key,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X]) span.dataview.inline-field-value,
-.markdown-preview-view ul li[data-task=X].task-list-item.is-checked span.dataview.inline-field-key,
-.markdown-preview-view ul li[data-task=X].task-list-item.is-checked span.dataview.inline-field-value,
-li[data-task=X].task-list-item.is-checked span.dataview.inline-field-key,
-li[data-task=X].task-list-item.is-checked span.dataview.inline-field-value,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]) span.dataview.inline-field-key,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]) span.dataview.inline-field-value,
-.markdown-preview-view ul li[data-task="-"].task-list-item.is-checked span.dataview.inline-field-key,
-.markdown-preview-view ul li[data-task="-"].task-list-item.is-checked span.dataview.inline-field-value,
-li[data-task="-"].task-list-item.is-checked span.dataview.inline-field-key,
-li[data-task="-"].task-list-item.is-checked span.dataview.inline-field-value {
-  background: transparent;
-  color: var(--text-faint);
 }
 
 /* https://docs.obsidian.md/Reference/CSS+variables/Editor/Bases */
@@ -3718,16 +3444,6 @@ body {
   background: var(--background-secondary-alt);
 }
 
-.better-properties-select,
-.better-properties-select-option {
-  color: var(--text-on-accent);
-  background: var(--text-accent);
-}
-
-.better-properties-rating-checkbox[aria-checked=true] > svg {
-  fill: var(--text-accent);
-}
-
 :root {
   --march-pretty-properties-initial-cover-border-radius: 50%;
   --march-pretty-properties-initial-cover-aspect-ratio: 1;
@@ -3738,95 +3454,15 @@ body {
   aspect-ratio: var(--march-pretty-properties-initial-cover-aspect-ratio);
 }
 
-/*
-=== === === === === === === === === === === === === 
-
-Fix Conflict with Better Properties Plugin
-
-=== === === === === === === === === === === === === 
-*/
-.autohide-props-with-banner .cm-scroller:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container,
-.autohide-props-with-banner .markdown-preview-view:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container {
-  position: relative;
-}
-
-.autohide-props-with-banner .cm-scroller:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container:not(:hover, :focus, :focus-within),
-.autohide-props-with-banner .markdown-preview-view:has(.banner-image:not(:empty)) .metadata-container:has(.better-properties-mod-object) .metadata-container:not(:hover, :focus, :focus-within) {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.autohide-props-with-banner .cm-scroller:has(.banner-image:not(:empty)) .metadata-container .metadata-content,
-.autohide-props-with-banner .markdown-preview-view:has(.banner-image:not(:empty)) .metadata-container .metadata-content {
-  overflow: scroll;
-  max-height: 500px;
-}
-
 body .callout[data-callout=note-toolbar].march-notetoolbar-nowrap-on-desktop .callout-content ul,
 body .workspace .callout[data-callout=note-toolbar].march-notetoolbar-nowrap-on-desktop .callout-content ul {
   display: flex;
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap;
 }
 body .callout[data-callout=note-toolbar].march-notetoolbar-nowrap-on-desktop .callout-content::-webkit-scrollbar,
 body .workspace .callout[data-callout=note-toolbar].march-notetoolbar-nowrap-on-desktop .callout-content::-webkit-scrollbar {
   width: 0;
   height: 0;
-}
-
-.mb-card {
-  background-color: var(--background-secondary);
-  border-radius: var(--radius-l);
-  border: none;
-  padding: var(--font-text-size);
-}
-
-.mb-input-block textArea {
-  background-color: var(--background-secondary);
-  border: none;
-  height: 1.3rem;
-  overflow: hidden;
-}
-
-/*
-=== === === === === === === === === === === === === 
-
-Helper Class
-
-=== === === === === === === === === === === === === 
-*/
-.march-metabind-hide-list-input .mb-list-input {
-  height: 0;
-  display: none;
-}
-
-.march-metabind-aliases {
-  display: flex;
-  justify-content: center;
-  background: var(--background-secondary);
-  border-radius: var(--radius-l);
-  padding: 10px 5px;
-  --mb-border-width: 0;
-}
-.march-metabind-aliases .mb-inline-list-item {
-  background: var(--background-secondary-alt);
-  border-radius: 50px;
-}
-
-.march-metabind-description textArea {
-  height: 2.3rem;
-  padding: 0.6rem;
-  border-radius: var(--radius-l);
-  margin-top: calc(var(--font-text-size) / 2);
-  text-align: center;
-}
-
-.virtual-footer-dynamic-content-element {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.virtual-footer-dynamic-content-element.virtual-footer-footer-group {
-  padding: var(--font-text-size) calc(var(--font-text-size) / 2) calc(var(--font-text-size) / 2 / 2);
-  border-top: 1px solid var(--background-modifier-border);
 }
 
 .cmdr-name-input-wrapper {

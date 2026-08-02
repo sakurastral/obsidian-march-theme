@@ -29,11 +29,11 @@
 
 .cm-highlight,
 mark {
-  background-color: var(--march-formatted-text-highlight-bg) !important;
-  color: var(--march-formatted-text-highlight-fg) !important;
+  background-color: var(--march-formatted-text-highlight-bg);
+  color: var(--march-formatted-text-highlight-fg);
 
   :not(:hover) {
-    color: var(--march-formatted-text-highlight-fg) !important;
+    color: var(--march-formatted-text-highlight-fg);
   }
 }
 
@@ -60,7 +60,7 @@ mark {
   .suggestion-highlight,
   .search-result-file-matched-text {
     --text-highlight-bg: transparent;
-    color: var(--march-formatted-text-highlight-bg) !important;
+    color: var(--march-formatted-text-highlight-bg);
     border-bottom: 2px solid var(--march-formatted-text-highlight-bg);
   }
 }
@@ -69,8 +69,8 @@ mark {
   .suggestion-highlight,
   .search-result-file-matched-text {
     --text-highlight-bg: transparent;
-    color: var(--march-formatted-text-highlight-fg) !important;
-    background-color: var(--march-formatted-text-highlight-bg) !important;
+    color: var(--march-formatted-text-highlight-fg);
+    background-color: var(--march-formatted-text-highlight-bg);
     border-bottom: 2px solid var(--march-formatted-text-highlight-bg);
   }
 }
@@ -85,8 +85,8 @@ strong,
   color: var(--bold-color);
   box-shadow: inset 0 calc(var(--march-formatted-text-bg-height) * -1) 0 0 var(--march-formatted-text-bold-bg);
 
-  --link-color: var(--bold-color) !important;
-  --link-external-color: var(--bold-color) !important;
+  --link-color: var(--bold-color);
+  --link-external-color: var(--bold-color);
 
   & i,
   & em,
@@ -96,7 +96,7 @@ strong,
       inset 0 calc(var(--march-formatted-text-bg-height) * -1) 0 0 var(--march-formatted-text-italic-bg);
   }
   &.cm-inline-code {
-    border-radius: 0 !important;
+    border-radius: 0;
   }
 }
 
@@ -123,7 +123,7 @@ em,
   }
 
   &.cm-inline-code {
-    border-radius: 0 !important;
+    border-radius: 0;
   }
 }
 

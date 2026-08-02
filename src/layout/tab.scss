@@ -7,9 +7,9 @@
 .enable-shrink-pinned-tabs {
   .workspace-tab-header {
     &:has(.mod-pinned) {
-      max-width: calc(var(--march-pinned-tab-width) + 0.125rem) !important;
-      container-type: normal !important;
-      min-width: max-content !important;
+      max-width: calc(var(--march-pinned-tab-width) + 0.125rem);
+      container-type: normal;
+      min-width: max-content;
 
       & .workspace-tab-header-inner-title {
         max-width: var(--march-pinned-tab-width);
