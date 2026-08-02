@@ -494,75 +494,8 @@ settings:
 */
 /* @settings
 
-name: March Theme - Plugins
-id: march-theme-plugin
-settings:
-    - 
-        id: heading-calendar
-        title: Canlendar
-        type: heading
-        level: 1
-        collapsed: true
-    -
-        id: march-calendar-color-holiday-text
-        title: Holiday's Font Color
-        type: variable-color
-        default: var(--color-red)
-        format: hex
-    -
-        id: march-calendar-color-today-bg
-        title: Today's Background Color
-        type: variable-color
-        default: var(--march-bg-accent)
-        format: hsl
-        opacity: true
-    -
-        id: march-calendar-color-hover-bg
-        title: Hover's Background Color
-        type: variable-color
-        default: var(--background-primary)
-        format: hex
-    -
-        id: march-calendar-color-active-border
-        title: Active Day's Border Color
-        type: variable-color
-        default: var(--march-accent)
-        format: hsl
-    -
-        id: march-calendar-dots-display
-        title: Display Dots
-        type: variable-select
-        default: none
-        options:
-            - 
-                label: Default
-                value: flex
-            - 
-                label: Hide
-                value: none
-    -
-        id: march-calendar-weeknum-border-display
-        title: Display Week Number's Right Border
-        type: variable-text
-        default: none
-    - 
-        id: heading-kanban
-        title: Kanban
-        type: heading
-        level: 1
-        collapsed: true
-    -
-        id: march-kanban-border-color
-        title: Kanban's Border Color
-        type: variable-color
-        default: rgb(0, 0, 0, 0)
-        format: rgb
-        opacity: true
-*/
-/* @settings
-
 name: March Theme - Color Scheme 
-id: march-theme-plugin
+id: march-theme-color-scheme
 settings:
     - 
         id: heading-color-scheme
