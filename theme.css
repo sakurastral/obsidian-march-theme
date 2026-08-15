@@ -1544,6 +1544,14 @@ body {
   --march-status-bar-height: calc(var(--status-bar-font-size) + var(--size-4-1) + var(--size-4-1) + 0.5rem);
   --button-radius: 50px;
 }
+body .markdown-source-view,
+body .markdown-source-view.mod-cm6 .cm-scroller,
+body .markdown-preview-view,
+body .community-modal-readme,
+body .sync-history-preview {
+  --march-text-body: color-mix(in srgb, var(--text-normal) 88%, var(--background-primary));
+  color: var(--march-text-body);
+}
 body .mod-root {
   --metadata-background: var(--background-primary-alt);
   --metadata-border-width: 0px;
