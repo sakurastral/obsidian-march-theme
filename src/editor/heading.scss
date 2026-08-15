@@ -74,7 +74,7 @@ body {
   @each $item in $list {
     .cm-line:hover,
     .HyperMD-header-#{$item}:hover,
-    h-#{$item}:hover {
+    h#{$item}:hover {
       & .collapse-indicator {
         opacity: 1;
       }
@@ -83,7 +83,7 @@ body {
 
   @each $item in $list {
     .HyperMD-header-#{$item},
-    h-#{$item} {
+    h#{$item} {
       .collapse-indicator {
         opacity: var(--march-h#{$item}-indicator-opacity);
       }
