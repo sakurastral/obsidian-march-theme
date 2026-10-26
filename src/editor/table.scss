@@ -9,3 +9,79 @@ body {
   --table-border-color: var(--march-50-accent);
   --table-row-alt-background: var(--background-primary-alt);
 }
+
+.march-table-style-two {
+  --table-header-background: var(--march-bg-accent);
+  --table-row-alt-background: transparent;
+
+  /* --table-border-width: 0; */
+  --table-header-border-width: 0;
+  --table-column-first-border-width: 0;
+  --table-column-last-border-width: 0;
+  --table-row-last-border-width: 0;
+
+  /* --table-header-background-hover: var(--background-primary-alt); */
+  --table-row-background-hover: var(--background-primary-alt);
+  --table-row-alt-background-hover: var(--background-primary-alt);
+
+  --table-add-button-background: var(--text-accent);
+
+  .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn,
+  .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn {
+    color: var(--text-on-accent);
+  }
+
+  .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn {
+    border-radius: var(--radius-l);
+  }
+
+  .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn {
+    border-radius: var(--radius-l);
+  }
+
+  table tbody {
+    background-color: var(--background-secondary);
+  }
+
+  .cm-html-embed td,
+  .markdown-rendered td,
+  .cm-html-embed th,
+  .markdown-rendered th {
+    border-width: 0;
+  }
+
+  table thead tr:first-child th:first-child {
+    border-top-left-radius: var(--radius-l);
+  }
+
+  table thead tr:first-child th:last-child {
+    border-top-right-radius: var(--radius-l);
+  }
+
+  table tbody tr:first-child td {
+    border-top-color: transparent;
+  }
+
+  table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: var(--radius-l);
+  }
+
+  table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: var(--radius-l);
+  }
+
+  .cm-html-embed th,
+  .markdown-rendered th {
+    padding: 0.55rem 0.25rem !important;
+  }
+
+  .cm-html-embed td,
+  .markdown-rendered td {
+    padding: 1rem 0.25rem !important;
+  }
+
+  .cm-html-embed th.table-cell-wrapper,
+  .markdown-rendered th .table-cell-wrapper {
+    align-content: center;
+  }
+}

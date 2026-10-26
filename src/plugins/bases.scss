@@ -4,10 +4,17 @@
 body {
   --bases-table-column-border-width: 0px;
   --bases-table-row-border-width: 0px;
-  --bases-table-header-background: var(--background-secondary);
+  --bases-table-header-background: var(--march-50-accent);
+
+  --bases-table-group-background: transparent;
 
   --bases-table-row-background-hover: var(--background-secondary);
   --bases-embed-radius: var(--radius-l);
+
+  --bases-embed-border-color: var(--background-primary);
+
+  --bases-cards-cover-background: transparent;
+  --bases-cards-shadow: none;
 }
 
 :is(.bases-no-toolbar, .bases-embed[alt~='no-toolbar']) .bases-toolbar-item {
@@ -15,6 +22,10 @@ body {
 }
 
 :is(.bases-no-toolbar, .bases-embed[alt~='no-toolbar']) .bases-header {
+  display: none;
+}
+
+:is(.bases-no-cards-label, .bases-embed[alt~='no-cards-label']) .bases-cards-label {
   display: none;
 }
 
@@ -31,8 +42,13 @@ body {
 .bases-rendered-value {
   overflow-y: hidden;
   overflow-x: scroll;
-  display: table-cell;
-  vertical-align: middle;
+  scrollbar-width: none;
+}
+
+.bases-td .multi-select-container {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
   scrollbar-width: none;
 }
 
@@ -40,12 +56,15 @@ body {
   scrollbar-gutter: auto;
 }
 
-/* https://forum.obsidian.md/t/enable-styling-row-in-base-based-on-its-row-number/108651 */
-
-.bases-tr:nth-of-type(even) {
+.bases-tbody .bases-tr {
   background: var(--background-primary-alt);
 }
 
 .bases-table .bases-group-heading {
-  background: var(--background-secondary-alt);
+  background: var(--bases-table-header-background);
+}
+
+// https://forum.obsidian.md/t/base-table-view-group-spacing-bug/117829/3
+.bases-table:not(:first-of-type) > .bases-group-heading {
+  margin-top: -10px;
 }

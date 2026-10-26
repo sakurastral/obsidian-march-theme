@@ -491,4 +491,23 @@ settings:
         default: var(--march-50-accent)
         format: hsl
         opacity: true
+    - 
+        id: heading-table
+        title: Table
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: march-table-style
+        title: Table Style
+        type: class-select
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: Default
+                value: none
+            - 
+                label: Filled
+                value: march-table-style-two
 */
