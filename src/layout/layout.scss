@@ -183,6 +183,10 @@ body {
   }
 }
 
+.workspace-ribbon.mod-primary:before {
+  border-bottom: none;
+}
+
 body {
   &.enable-colorful-frame-style-layout {
     --titlebar-background: var(--march-accent);

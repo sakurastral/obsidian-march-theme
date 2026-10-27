@@ -15,6 +15,9 @@ body {
 
   --bases-cards-cover-background: transparent;
   --bases-cards-shadow: none;
+
+  --bases-table-header-color: var(--text-accent);
+  --bases-group-heading-property-color: var(--text-accent);
 }
 
 :is(.bases-no-toolbar, .bases-embed[alt~='no-toolbar']) .bases-toolbar-item {
